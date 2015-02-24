@@ -7,15 +7,22 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_betbox</sprite>
+    <sprite>sprites\spr_list_team1</sprite>
     <sprite>sprites\spr_VP</sprite>
-    <sprite>sprites\spr_NIP</sprite>
     <sprite>sprites\spr_NVUS</sprite>
     <sprite>sprites\spr_TSM</sprite>
+    <sprite>sprites\spr_play_match</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\obj_gui_betbox</object>
+    <object>objects\obj_gui_playmatch</object>
+    <object>objects\obj_generation_Team1</object>
+  </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\room1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

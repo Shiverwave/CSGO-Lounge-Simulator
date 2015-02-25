@@ -35,6 +35,61 @@ globalvar team1chance
 {team1chance = irandom(100)}
 if team1chance = 0 then team1chance = 1
 if team1chance = 100 then team1chance = 99
+globalvar team1round
+{team1round = 0}
+globalvar team1roundwins
+{team1roundwins = 0}
+alarm[0] = 2700 //90 seconds
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>team1roundwins = irandom(team1chance)
+team2roundwins = irandom(team2chance)
+if team1roundwins &gt; team2roundwins then team1round += 1
+if team2roundwins &gt; team1roundwins then team2round += 1
+alarm[1] = 600
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alarm[1] = 600
 </string>
           </argument>
         </arguments>
@@ -57,8 +112,10 @@ if team1chance = 100 then team1chance = 99
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(50,100,(team1))
+            <string>draw_text(50,100,(team1roundwins))
 draw_text(30,22,"%" + string (team1chance))
+draw_text(200,200,alarm[0])
+draw_text(200,220,alarm[1])
 </string>
           </argument>
         </arguments>

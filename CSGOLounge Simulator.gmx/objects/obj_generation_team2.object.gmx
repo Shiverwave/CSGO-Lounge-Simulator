@@ -29,12 +29,11 @@
 image_index = irandom(23)
 image_xscale = 0.9
 image_yscale = 0.9
-globalvar team1
-{team1 = image_index}
-globalvar team1chance
-{team1chance = irandom(100)}
-if team1chance = 0 then team1chance = 1
-if team1chance = 100 then team1chance = 99
+if image_index = team1 then image_index = irandom(23)
+globalvar team2
+{team2 = image_index}
+globalvar team2chance
+{team2chance = 100 - team1chance}
 </string>
           </argument>
         </arguments>
@@ -57,8 +56,8 @@ if team1chance = 100 then team1chance = 99
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(50,100,(team1))
-draw_text(30,22,"%" + string (team1chance))
+            <string>draw_text(258,100,(team2))
+draw_text(256,22,"%" + string (team2chance))
 </string>
           </argument>
         </arguments>
@@ -77,7 +76,7 @@ draw_text(30,22,"%" + string (team1chance))
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>0,0</point>
+    <point>37,37</point>
     <point>38,38</point>
   </PhysicsShapePoints>
 </object>

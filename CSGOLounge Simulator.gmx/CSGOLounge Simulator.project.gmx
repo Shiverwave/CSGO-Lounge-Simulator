@@ -6,11 +6,10 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprite>sprites\spr_list_team</sprite>
     <sprite>sprites\spr_betbox</sprite>
     <sprite>sprites\spr_play_match</sprite>
-    <sprite>sprites\spr_TSM</sprite>
     <sprites name="Team Logo's">
-      <sprite>sprites\spr_list_team1</sprite>
       <sprite>sprites\spr_VP</sprite>
       <sprite>sprites\spr_Titan</sprite>
       <sprite>sprites\spr_denial</sprite>
@@ -33,6 +32,7 @@
       <sprite>sprites\spr_dat</sprite>
       <sprite>sprites\spr_fnatic</sprite>
       <sprite>sprites\spr_NVUS</sprite>
+      <sprite>sprites\spr_TSM</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -40,7 +40,8 @@
   <objects name="objects">
     <object>objects\obj_gui_betbox</object>
     <object>objects\obj_gui_playmatch</object>
-    <object>objects\obj_generation_Team1</object>
+    <object>objects\obj_generation_team1</object>
+    <object>objects\obj_generation_team2</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

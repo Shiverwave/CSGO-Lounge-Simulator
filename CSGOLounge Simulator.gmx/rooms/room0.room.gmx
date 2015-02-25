@@ -3,8 +3,8 @@
   <caption></caption>
   <width>500</width>
   <height>300</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>1</vsnap>
+  <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -53,8 +53,8 @@
   <instances>
     <instance objName="obj_gui_betbox" x="162" y="41" name="inst_56C76B6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gui_playmatch" x="448" y="256" name="inst_B814B99D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_generation_Team1" x="64" y="256" name="inst_0D9A83B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_generation_Team1" x="160" y="256" name="inst_8779A866" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_generation_team1" x="111" y="41" name="inst_0D9A83B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_generation_team2" x="209" y="41" name="inst_2485D1D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -7,11 +7,33 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_betbox</sprite>
-    <sprite>sprites\spr_list_team1</sprite>
-    <sprite>sprites\spr_VP</sprite>
-    <sprite>sprites\spr_NVUS</sprite>
-    <sprite>sprites\spr_TSM</sprite>
     <sprite>sprites\spr_play_match</sprite>
+    <sprite>sprites\spr_TSM</sprite>
+    <sprites name="Team Logo's">
+      <sprite>sprites\spr_list_team1</sprite>
+      <sprite>sprites\spr_VP</sprite>
+      <sprite>sprites\spr_Titan</sprite>
+      <sprite>sprites\spr_denial</sprite>
+      <sprite>sprites\spr_orbit</sprite>
+      <sprite>sprites\spr_navi</sprite>
+      <sprite>sprites\spr_mouz</sprite>
+      <sprite>sprites\spr_3Dmax</sprite>
+      <sprite>sprites\spr_LGB</sprite>
+      <sprite>sprites\spr_Kabum</sprite>
+      <sprite>sprites\spr_Liquid</sprite>
+      <sprite>sprites\spr_Penta</sprite>
+      <sprite>sprites\spr_G2</sprite>
+      <sprite>sprites\spr_epsilon</sprite>
+      <sprite>sprites\spr_F_3</sprite>
+      <sprite>sprites\spr_CW</sprite>
+      <sprite>sprites\spr_CLG</sprite>
+      <sprite>sprites\spr_property</sprite>
+      <sprite>sprites\spr_cloud9</sprite>
+      <sprite>sprites\spr_hellraisers</sprite>
+      <sprite>sprites\spr_dat</sprite>
+      <sprite>sprites\spr_fnatic</sprite>
+      <sprite>sprites\spr_NVUS</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>

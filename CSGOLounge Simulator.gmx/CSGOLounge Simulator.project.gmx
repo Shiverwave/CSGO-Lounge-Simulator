@@ -42,6 +42,7 @@
     <object>objects\obj_gui_playmatch</object>
     <object>objects\obj_generation_team1</object>
     <object>objects\obj_generation_team2</object>
+    <object>objects\obj_teamhandling</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

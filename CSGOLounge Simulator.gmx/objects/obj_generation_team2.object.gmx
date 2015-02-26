@@ -36,8 +36,10 @@ globalvar team2chance
 {team2chance = 100 - team1chance}
 globalvar team2round
 {team2round = 0}
-globalvar team2roundwins
-{team2roundwins = 0}
+globalvar team2roundchance
+{team2roundchance = 0}
+globalvar team2name
+{team2name = 'error'}
 </string>
           </argument>
         </arguments>
@@ -60,8 +62,8 @@ globalvar team2roundwins
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(258,100,(team2roundwins))
-draw_text(256,22,"%" + string (team2chance))
+            <string>draw_text(258,100,(team2round))
+draw_text(340,74,"%" + string (team2chance))
 </string>
           </argument>
         </arguments>

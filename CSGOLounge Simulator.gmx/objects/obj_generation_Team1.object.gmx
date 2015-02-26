@@ -37,8 +37,10 @@ if team1chance = 0 then team1chance = 1
 if team1chance = 100 then team1chance = 99
 globalvar team1round
 {team1round = 0}
-globalvar team1roundwins
-{team1roundwins = 0}
+globalvar team1roundchance
+{team1roundchance = 0}
+globalvar team1name
+{team1name = 'error'}
 alarm[0] = 2700 //90 seconds
 </string>
           </argument>
@@ -62,11 +64,11 @@ alarm[0] = 2700 //90 seconds
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>team1roundwins = irandom(team1chance)
-team2roundwins = irandom(team2chance)
-if team1roundwins &gt; team2roundwins then team1round += 1
-if team2roundwins &gt; team1roundwins then team2round += 1
-alarm[1] = 600
+            <string>team1roundchance = irandom(team1chance)
+team2roundchance = irandom(team2chance)
+if team1roundchance &gt; team2roundchance then team1round += 1
+if team2roundchance &gt; team1roundchance then team2round += 1
+alarm[1] = 150
 </string>
           </argument>
         </arguments>
@@ -89,7 +91,7 @@ alarm[1] = 600
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[1] = 600
+            <string>alarm[1] = 150
 </string>
           </argument>
         </arguments>
@@ -112,8 +114,8 @@ alarm[1] = 600
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(50,100,(team1roundwins))
-draw_text(30,22,"%" + string (team1chance))
+            <string>draw_text(50,100,(team1round))
+draw_text(43,74,"%" + string (team1chance))
 draw_text(200,200,alarm[0])
 draw_text(200,220,alarm[1])
 </string>

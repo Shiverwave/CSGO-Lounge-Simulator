@@ -62,8 +62,7 @@ globalvar team2name
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(258,100,(team2round))
-if matchstart = 1 then draw_text_transformed(310,145,(team2round),1.5,1.5,0)
+            <string>if matchstart = 1 then draw_text_transformed(310,145,(team2round),1.5,1.5,0)
 draw_text(340,74,"%" + string (team2chance))
 </string>
           </argument>

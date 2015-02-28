@@ -3,8 +3,8 @@
   <caption></caption>
   <width>500</width>
   <height>300</height>
-  <vsnap>1</vsnap>
-  <hsnap>1</hsnap>
+  <vsnap>32</vsnap>
+  <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -56,6 +56,8 @@
     <instance objName="obj_generation_team1" x="151" y="56" name="inst_0D9A83B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_generation_team2" x="278" y="56" name="inst_2485D1D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_teamhandling" x="477" y="278" name="inst_57BD916B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_roundwins" x="96" y="64" name="inst_70E22593" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_roundwins2" x="320" y="64" name="inst_ABF446BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
